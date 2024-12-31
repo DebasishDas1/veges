@@ -8,6 +8,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
+  SheetDescription,
 } from "./ui/sheet";
 import { Separator } from "./ui/separator";
 import { formatPrice } from "@/lib/utils";
@@ -50,6 +51,7 @@ const Cart = () => {
       <SheetContent className="flex w-full flex-col pr-0 sm:max-w-lg">
         <SheetHeader className="space-y-2.5 pr-6 text-border">
           <SheetTitle>Cart ({itemCount})</SheetTitle>
+          <SheetDescription>Pick up where you left off</SheetDescription>
         </SheetHeader>
         {itemCount > 0 ? (
           <>

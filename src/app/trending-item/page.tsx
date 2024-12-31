@@ -1,7 +1,7 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import PageTitle from "@/components/PageTitle";
 
-const All = () => {
+const TrendingItem = () => {
   return (
     <MaxWidthWrapper>
       <PageTitle title={"Trending Items"} />
@@ -9,4 +9,4 @@ const All = () => {
   );
 };
 
-export default All;
+export default TrendingItem;

@@ -16,7 +16,7 @@ const Home = () => {
             team to ensure our highest quality standards.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mt-6">
-            <Link href="/all" className={buttonVariants()}>
+            <Link href="/trending-item" className={buttonVariants()}>
               Browse Trending
             </Link>
             <Button variant="ghost">Our quality promise &rarr;</Button>

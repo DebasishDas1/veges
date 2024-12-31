@@ -15,7 +15,7 @@ import Link from "next/link";
 import { buttonVariants } from "./ui/button";
 import Image from "next/image";
 // import { useCart } from '@/hooks/use-cart'
-import { ScrollArea } from "./ui/scroll-area";
+// import { ScrollArea } from "./ui/scroll-area";
 // import CartItem from "./CartItem";
 import { useEffect, useState } from "react";
 import empty_cart from "../../public/veges_empty_cart.png";

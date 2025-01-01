@@ -1,7 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { constructMetadata } from "@/lib/utils";
-import spice_hero from "../../../../public/spices.png";
 
 export const metadata = constructMetadata({
   title: "Biriyani vegetable",

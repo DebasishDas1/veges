@@ -1,6 +1,5 @@
 import HeroSection from "@/components/HeroSection";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import PageTitle from "@/components/PageTitle";
 import { constructMetadata } from "@/lib/utils";
 import spice_powder from "../../../../public/spice_powder.png";
 

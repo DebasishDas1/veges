@@ -26,38 +26,29 @@ export function formatPrice(
 }
 
 export function constructMetadata({
-  title = "Veges",
-  description = "veges",
-  image = "/thumbnail.png",
-  icons = "/favicon.ico",
+  title = "",
+  description = "",
   noIndex = false,
+  exact = false,
 }: {
   title?: string;
   description?: string;
-  image?: string;
-  icons?: string;
   noIndex?: boolean;
+  exact?: boolean;
 } = {}): Metadata {
   return {
-    title,
+    title: exact ? title : `${title} - Veges`,
     description,
     openGraph: {
       title,
       description,
-      images: [
-        {
-          url: image,
-        },
-      ],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: [image],
       creator: "@debasish",
     },
-    icons,
     metadataBase: new URL("https://www.veges.in/"),
     ...(noIndex && {
       robots: {

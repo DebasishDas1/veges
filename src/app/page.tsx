@@ -7,7 +7,7 @@ const Home = () => {
     <>
       <MaxWidthWrapper>
         <div className="py-20 mx-auto text-center flex flex-col items-center max-w-3xl">
-          <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+          <h1 className="text-5xl font-bold tracking-tight text-gray-900 sm:text-8xl">
             One stop destination for all your{" "}
             <span className="text-green-600">Biriyani requirements</span>.
           </h1>

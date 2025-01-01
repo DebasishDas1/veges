@@ -11,4 +11,16 @@ export const NAV_LINKS = [
     text: "Masala powder",
     url: "/masala-powder",
   },
+  {
+    text: "Vegetable",
+    url: "/vegetable",
+  },
+  {
+    text: "Biriyani essentials",
+    url: "/biriyani-essentials",
+  },
+  {
+    text: "About",
+    url: "/about",
+  },
 ];

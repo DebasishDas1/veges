@@ -9,7 +9,7 @@ import {
   SheetTrigger,
   SheetTitle,
 } from "./ui/sheet";
-import { NAV_LINKS } from "@/lib/navLinks";
+import { NAV_LINKS } from "@/lib/links";
 import { Menu } from "lucide-react";
 import Link from "next/link";
 import { JSX } from "react";
@@ -38,7 +38,7 @@ const MobileNav = () => {
       >
         <button
           type="submit"
-          className="outline-none flex items-center text-3xl font-black"
+          className="outline-none flex items-center text-3xl font-semibold"
         >
           <span>{option.text}</span>
         </button>
@@ -51,7 +51,7 @@ const MobileNav = () => {
       <SheetTrigger asChild>
         <Menu />
       </SheetTrigger>
-      <SheetContent className="backdrop-blur-3xl bg-white/70" side="top">
+      <SheetContent className="bg-white/70 backdrop-blur-sm" side="top">
         <SheetHeader>
           <SheetTitle>
             <Link href="/" className="ml-4 flex lg:ml-0 py-4">

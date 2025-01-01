@@ -4,7 +4,7 @@ import MobileNav from "./MobileNav";
 import Image from "next/image";
 import logo from "../../public/vegesLogo.png";
 import NavItem from "./NavItem";
-import { NAV_LINKS } from "@/lib/navLinks";
+import { NAV_LINKS } from "@/lib/links";
 import Cart from "./Cart";
 
 const Navbar = () => {

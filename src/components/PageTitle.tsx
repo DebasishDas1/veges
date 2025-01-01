@@ -4,12 +4,12 @@ type Props = {
 
 const PageTitle = ({ title }: Props) => {
   return (
-    <div className="md:text-6xl text-4xl font-bold py-16 text-center flex justify-center">
+    <div className="md:text-8xl text-5xl font-bold py-10 text-center flex justify-center">
       <h1>
-        <span className="bg-gradient-to-r from-green-400 to-teal-600 bg-clip-text text-transparent">
-          Biryani
-        </span>{" "}
-        {title}
+        Biryani{" "}
+        <span className="bg-gradient-to-r from-emerald-500 to-lime-600 bg-clip-text text-transparent">
+          {title}
+        </span>
       </h1>
     </div>
   );

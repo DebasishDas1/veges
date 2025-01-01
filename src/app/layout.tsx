@@ -1,32 +1,23 @@
 import Navbar from "@/components/Navbar";
 // import Providers from '@/components/Providers'
-import { cn } from "@/lib/utils";
-import { Inter } from "next/font/google";
+import { cn, constructMetadata } from "@/lib/utils";
+import { Poppins } from "next/font/google";
 import { Toaster } from "sonner";
 import Footer from "@/components/Footer";
 import "./globals.css";
-import { Metadata } from "next";
 
-const inter = Inter({ subsets: ["latin"] });
+// Preload Google Font (Poppins)
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-poppins",
+});
 
-// export const metadata = constructMetadata();
-
-export const metadata: Metadata = {
-  metadataBase: new URL("https://www.veges.in/"),
-  title: {
-    template: `%s - Veges`,
-    default: "Veges",
-  },
-  description:
-    "Welcome to Veges. Every product on our platform is verified by our team to ensure our highest quality standards.",
-  twitter: {
-    card: "summary_large_image",
-  },
-  alternates: {
-    canonical: "./",
-  },
-  authors: [{ name: "Veges", url: "https://www.veges.in/" }],
-};
+export const metadata = constructMetadata({
+  title: "Veges",
+  description: "One stop destination for all your biriyani requirements",
+  exact: true,
+});
 
 export default function RootLayout({
   children,
@@ -36,7 +27,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full">
       <body
-        className={cn("relative h-full font-sans antialiased", inter.className)}
+        className={cn(
+          "relative h-full font-sans antialiased",
+          poppins.className
+        )}
       >
         <main className="relative flex flex-col min-h-screen">
           {/* <Providers> */}
